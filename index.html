@@ -9,6 +9,10 @@
 	<script>
 	function Circle(cx, cy, html_id)
 	{
+		var mySVG = document.getElementById("svg");
+		mySVG.setAttribute("width", window.innerWidth);
+		mySVG.setAttribute("height", window.innerHeight);
+		
 		var html_id = html_id;
 		this.info = { cx: cx,  cy: cy };
 		
